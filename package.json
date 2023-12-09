@@ -1,0 +1,20 @@
+{
+  "name": "pruebajenkis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "file:chrome": "cypress run --browser chrome --spec cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "file:edge": "cypress run --browser edge --spec cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "file:electron": "cypress run --browser electron --spec cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "html-report": "cypress run --spec cypress/e2e/**/*.cy.{js,jsx,ts,tsx} --browser chrome --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1",
+    "cypress-mochawesome-reporter": "^3.7.0"
+  }
+}
